@@ -1,0 +1,131 @@
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+      html {
+          font-family: 'Josefin Sans', sans-serif !important;
+      }
+  }
+
+  :where(.css-dev-only-do-not-override-diro6f).ant-modal .ant-modal-close {
+      display: none;
+  }
+
+
+  .button-normal {
+      padding: 10px 20px;
+      border: 1px solid white;
+      border-radius: 5px;
+  }
+
+  .button-normal:hover {
+      transform: scale(1.2);
+  }
+
+  .button-normal2 {
+      border: 1px solid gray;
+      border-radius: 5px;
+      width: max-content;
+      padding: 10px;
+      height: max-content;
+  }
+
+  .button-normal3 {
+      border: 1px solid transparent;
+      border-radius: 5px;
+      width: max-content;
+      padding: 10px;
+      padding-bottom: 10px;
+      height: max-content;
+      transition: 0.5s;
+  }
+
+  .button-normal3:hover {
+      border: 1px solid rgba(128, 128, 128, 0.411);
+      background: #002140;
+      border-radius: 10px;
+      transform: scale(1px);
+  }
+
+  .feature-icon:hover {
+      background: #002140;
+      transform: scale(1.1);
+      transition: 1s;
+  }
+
+  .feature-icon:hover svg {
+      color: skyblue;
+      fill: #002140;
+      transition: 0s;
+
+  }
+
+  .feature-icon:hover h1 {
+      color: skyblue !important;
+  }
+
+  .feature-icon:hover h3 {
+      color: whitesmoke !important;
+
+  }
+
+  .button-normal3:hover h1 {
+      color: skyblue !important;
+  }
+
+  .button-normal3:hover h3 {
+      color: whitesmoke !important;
+  }
+
+
+  .flexing-row {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .flexing-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  button,
+  [type='button'],
+  [type='reset'],
+  [type='submit'] {
+      background: rgb(24, 24, 121) !important;
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid black;
+      color: white;
+      margin: 0px 10px;
+
+  }
+
+  .button1 {
+      background: rgb(14, 14, 40) !important;
+      padding: 10px 25px;
+      border: 1px solid black;
+      color: white;
+      margin: 0px 10px;
+  }
+
+  .hovering:hover {
+      color: rgb(24, 24, 121) !important;
+
+  }
+
+  .hovering1:hover {
+      @apply text-sky-300
+  }
+
+
+  .commenStyle {
+      padding: 30px 30px;
+  }
