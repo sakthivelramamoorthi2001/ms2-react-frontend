@@ -8,9 +8,9 @@ const base = axios.create({
     try {
         const result = await base.post('/signin', data)
         console.log(result.data,"api")
-        return result.data ? result.data : false
+        return result.data.result ? result.data.result : false
     } catch (error) {
-        console.log(error);     
+        console.log(error);
     }
 }
 

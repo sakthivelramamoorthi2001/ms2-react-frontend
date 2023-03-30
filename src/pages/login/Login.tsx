@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import {useForm} from 'react-hook-form'
+import { useQueries, useQuery } from 'react-query';
 import { useNavigate } from 'react-router-dom';
 import * as api from '../../apis/index'
+import {login} from '../../apis/index'
+
 export default function SignUp(){
     const useNavi = useNavigate();
     const [wrong, setWrong] = useState(false)
     const {register, formState:{errors}, handleSubmit } = useForm();
+    // const {data,} = useQuery(['login'], {retry:false})
+
     async function sub(data: any){
        const userData = await api.login(data)
+       console.log(userData,"dara");
+       
        if (userData) {
         setWrong(false)
         useNavi('/ms2')

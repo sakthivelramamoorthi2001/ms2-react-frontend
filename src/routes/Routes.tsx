@@ -5,10 +5,12 @@ import Login from "../pages/login/Login"
 import HomeLayout from '../pages/layout/HomeLayout.js'
 import SignUp from "../pages/login/SignUp"
 import ChooseTemplate from "../pages/FlowToSelectResume/ChooseTemplate"
-import CreateLayoutHome from '../pages/SelectResumeTemplateLayout/CreateLayoutHome'
-import Type1Objectiive from "../pages/ObjectiveComponents/Type1Objectiive"
+import CreateLayoutHome from '../pages/layout/SelectResumeTemplateLayout/CreateLayoutHome'
 import ErrorPage from "../pages/ErrorPage"
-import Resume from '../pages/Resume'
+import Files from '../pages/ResumeFiles/Files'
+import TempleteView from '../pages/FlowToSelectResume/TempleteView';
+import TemplateCreate from '../pages/FlowToCreateTemplate/Home'
+import VipCreate from "../pages/login/VipCreate"
 const Routes = () => {
     const route = [{
         path: "/",
@@ -28,23 +30,28 @@ const Routes = () => {
             },
             {
                 path: 'create',
-                element: <CreateLayoutHome />,
+                element: <ChooseTemplate />,
+            },
+            {
+                path:'design/:id',
+                element:<CreateLayoutHome />,
                 children: [{
                     index: true,
-                    element: <ChooseTemplate />
+                    element: <TempleteView />
                 },
-                {
-                    path: 'objective',
-                    element: <Type1Objectiive />
-                }]
+        ]
             },
             {
                 path: 'templatecreate',
-                element: <SignUp />
+                element: <TemplateCreate />
             },
             {
                 path: 'files',
-                element: < Resume />
+                element: < Files />
+            },
+            {
+                path:"vip-plans",
+                element:<VipCreate />
             }
         ]
     },

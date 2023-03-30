@@ -1,3 +1,4 @@
+
 import React from "react";
 
 
@@ -78,6 +79,7 @@ const App = () => {
             listStyle: 'number'
         }
     }
+
     return <section className=" flex flex-col [&>*]:mb-10 border border-black p-20 ">
         {/* head */}
         <div style={TotalStyles.NameBarStyle} >
@@ -89,10 +91,7 @@ const App = () => {
             </div>
         </div>
 
-        <hr />
-
         {/* object */}
-
 
         <div>
             <h1 style={TotalStyles.CommenHeaderStyle} >Objectives</h1>
@@ -101,6 +100,7 @@ const App = () => {
                 Proident fugiat qui incididunt laboris ea cillum sunt commodo et. Nisi mollit officia ipsum magna. Magna nisi consequat nisi Lorem quis do exercitation. Magna qui proident excepteur ut enim ad. Laboris et adipisicing velit ea cupidatat ipsum.
                 Ipsum duis minim in do sit deserunt magna sunt voluptate excepteur ipsum id pariatur. Laborum labore esse non consequat voluptate commodo voluptate ipsum qui et elit ipsum eu dolor. Consequat excepteur occaecat est exercitation ea.</p>
         </div>
+        
 
         {/* experience */}
 
