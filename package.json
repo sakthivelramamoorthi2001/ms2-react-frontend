@@ -3,13 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "dev": "vite",
+    "prod":"yarn run build && vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint  --fix src/**/*.js",
     "format": "prettier src/**/*.js --write. --config ./.prettierrc"
-  
   },
 
   "dependencies": {
