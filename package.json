@@ -8,13 +8,12 @@
   },
   "scripts": {
     "dev": "vite",
-    "prod":"yarn run build && vite",
+    "prod": "yarn run build && ./dist",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint  --fix src/**/*.js",
     "format": "prettier src/**/*.js --write. --config ./.prettierrc"
   },
-
   "dependencies": {
     "antd": "^5.1.7",
     "axios": "^1.3.2",
